@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  centos-erlang:
+    container_name: centos-erlang
+    image: digz6666/centos7-erlang18:latest
+    hostname: centos-erlang
+    restart: always
+    networks:
+      - ast_starter
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: 10m
+
+networks:
+  ast_starter:
+    driver: bridge

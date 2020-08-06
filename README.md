@@ -2,7 +2,7 @@ Centos 7 with erlang 18.0
 
 ### Build docker image
 ```
-docker build --tag digz6666/centos7-erlang18:$version.
+docker build --tag digz6666/centos7-erlang18:$version .
 ```
 
 ### Push docker image

@@ -8,7 +8,7 @@ RUN ln -s /usr/share/zoneinfo/Asia/Ulaanbaatar /etc/localtime
 RUN yum update -y
 
 # install epel yum repo
-RUN yum install epel-release
+RUN yum install -y epel-release
 
 #RUN yum group install -y "Development Tools"
 # install required packages
