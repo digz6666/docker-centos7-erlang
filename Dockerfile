@@ -15,6 +15,7 @@ RUN yum install -y epel-release
 RUN yum install -y               \
         wget                     \
         mlocate                  \
+        git                      \
         openssl-devel            \
         gcc gcc-c++ glibc-devel  \
         make automake            \
