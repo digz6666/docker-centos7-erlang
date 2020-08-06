@@ -23,12 +23,13 @@ RUN yum install -y               \
         libyaml-devel            \
         expat-devel
 
-RUN cd /tmp
+WORKDIR /tmp
 RUN wget http://erlang.org/download/otp_src_18.0.tar.gz
 RUN tar -xvzf otp_src_18.0.tar.gz
-RUN cd otp_src_18.0
+WORKDIR /tmp/otp_src_18.0
 RUN ./configure
 RUN make
 RUN make install
+WORKDIR /root
 
 CMD /bin/bash && tail -f /dev/null
