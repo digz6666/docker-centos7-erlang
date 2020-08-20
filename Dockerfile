@@ -10,11 +10,15 @@ RUN yum update -y
 # install epel yum repo
 RUN yum install -y epel-release
 
+# install useful commands
+RUN yum install -y               \
+        sudo                     \
+        mlocate
+
 #RUN yum group install -y "Development Tools"
 # install required packages
 RUN yum install -y               \
         wget                     \
-        mlocate                  \
         git                      \
         openssl-devel            \
         gcc gcc-c++ glibc-devel  \
