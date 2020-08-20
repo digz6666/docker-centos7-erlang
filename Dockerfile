@@ -12,7 +12,7 @@ RUN yum install -y epel-release
 
 # install useful commands
 RUN yum install -y               \
-        sudo                     \
+        # sudo                     \
         mlocate
 
 #RUN yum group install -y "Development Tools"
