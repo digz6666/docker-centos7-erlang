@@ -20,10 +20,11 @@ RUN yum install -y               \
 RUN yum install -y               \
         wget                     \
         git                      \
-        openssl-devel            \
+        openssl openssl-devel    \
         gcc gcc-c++ glibc-devel  \
         make automake            \
-        ncurses-devel autoconf   \
+        ncurses-devel            \
+        autoconf                 \
         wxBase.x86_64            \
         libyaml-devel            \
         expat-devel
