@@ -25,7 +25,7 @@ RUN yum install -y               \
         make automake            \
         ncurses-devel            \
         autoconf                 \
-        wxBase.x86_64            \
+        wxBase                   \
         libyaml-devel            \
         expat-devel
 
